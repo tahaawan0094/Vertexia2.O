@@ -58,7 +58,7 @@ const CrossIcon = ({ className }: IconProps) => (
 
 export default function ComparisonSection() {
   return (
-    <section className="relative overflow-hidden bg-[#040404] px-6 pb-28 pt-24 text-white">
+    <section className="relative bg-[#040404] px-6 pb-32 pt-24 text-white max-[640px]:pb-8 max-[640px]:pt-8">
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_0%,rgba(28,74,135,0.35)_0%,rgba(5,6,8,0.0)_58%)]"
         aria-hidden="true"

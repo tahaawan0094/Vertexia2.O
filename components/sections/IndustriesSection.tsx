@@ -29,7 +29,7 @@ const exampleCards = [
 
 export default function IndustriesSection() {
   return (
-    <section className="bg-[#040404] px-6 pb-32 pt-24 text-white">
+    <section className="bg-[#040404] px-6 pb-32 pt-24 text-white max-[640px]:pt-8">
       <FadeIn>
       <div className="mx-auto max-w-[1200px] text-center">
         <h2 className="text-[clamp(2.2rem,4.6vw,3.9rem)] font-medium leading-tight">
