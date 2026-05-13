@@ -96,9 +96,9 @@ export default function WhyChooseSection() {
           Your one-stop-shop to attract and convert customers
         </p>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.05fr]">
-          <div>
-            <div className="rounded-[14px] border border-white/5 bg-[#1b1b1b] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)]">
+        <div className="mt-14 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_1.05fr] lg:gap-10">
+          <div className="max-[640px]:mt-10 max-[640px]:text-center">
+            <div className="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center">
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2d6bff] text-[#2d6bff]">
                   <img
@@ -112,12 +112,10 @@ export default function WhyChooseSection() {
                   Save time &amp; money
                 </h3>
               </div>
-              <p className="mt-4 text-sm leading-7 text-white/60">
-                Save yourself the time and frustration of trying to build your
-                own website. Save the cost of hiring an expensive agency to do
-                it for you. Vertexia provides the solution for small business:
-                agency-like quality at the price of a do-it-yourself platform
-                and a team here to help you and build your online presence.
+              <p className="mt-4 text-sm leading-7 text-white/60 max-[640px]:mx-auto max-[640px]:max-w-[420px]">
+                Skip the hassle of DIY and the high costs of agency-built
+                websites. Choose Vertexia, the most affordable way to launch and
+                grow your online presence successfully.
               </p>
             </div>
 
