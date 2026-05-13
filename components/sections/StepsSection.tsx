@@ -26,7 +26,7 @@ const steps = [
 
 export default function StepsSection() {
   return (
-    <section className="relative overflow-hidden bg-[#040404] px-6 pb-32 pt-24 text-white">
+    <section className="relative overflow-hidden bg-[#040404] px-6 pb-32 pt-24 text-white max-[640px]:pt-8">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_100%,rgba(14,96,160,0.55)_0%,rgba(5,5,5,0)_65%)]" />
       <div className="relative mx-auto max-w-[1200px] text-center">
         <FadeIn>
