@@ -3,7 +3,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function AlternativesSection() {
   return (
-    <section id="services" className="bg-[#040404] px-6 pb-32 pt-28 text-white max-[640px]:pt-12">
+    <section id="services" className="bg-[#040404] px-6 pb-32 pt-28 text-white max-[640px]:pt-2">
       <FadeIn>
         <div className="mx-auto flex max-w-[1200px] flex-col gap-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr]">
@@ -33,13 +33,13 @@ export default function AlternativesSection() {
                 src="/images%202/65df7e37e94e6f591756cda2_emoji-1.webp"
                 alt=""
                 aria-hidden="true"
-                className="absolute -left-0 top-20 w-12 drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
+                className="absolute -left-0 top-20 w-12 drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)] max-[640px]:-left-3 max-[640px]:top-4 max-[640px]:w-10"
               />
               <img
                 src="/images%202/65df7e3709bbbd9c999aaa00_emoji-2.webp"
                 alt=""
                 aria-hidden="true"
-                className="absolute bottom-4 -right-5 w-14 drop-shadow-[0_12px_22px_rgba(0,0,0,0.35)]"
+                className="absolute bottom-4 -right-5 w-14 drop-shadow-[0_12px_22px_rgba(0,0,0,0.35)] max-[640px]:-right-4 max-[640px]:bottom-2 max-[640px]:w-12"
               />
             </div>
           </div>
@@ -55,13 +55,13 @@ export default function AlternativesSection() {
                 src="/images%202/65df7e376d9cb2f9df32dbe9_emoji-3.webp"
                 alt=""
                 aria-hidden="true"
-                className="absolute -left-6 top-14 w-10 drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)]"
+                className="absolute -left-6 top-14 w-10 drop-shadow-[0_10px_20px_rgba(0,0,0,0.35)] max-[640px]:-left-3 max-[640px]:top-4 max-[640px]:w-9"
               />
               <img
                 src="/images%202/65df7e37060444b71034f8f3_emoji-4.webp"
                 alt=""
                 aria-hidden="true"
-                className="absolute -bottom-2 right-8 w-12 drop-shadow-[0_12px_22px_rgba(0,0,0,0.35)]"
+                className="absolute -bottom-2 right-8 w-12 drop-shadow-[0_12px_22px_rgba(0,0,0,0.35)] max-[640px]:-right-2 max-[640px]:bottom-2 max-[640px]:w-11"
               />
             </div>
             <div>
