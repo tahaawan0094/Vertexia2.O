@@ -3,7 +3,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function ProfessionalWebSection() {
   return (
-    <section className="relative overflow-visible bg-[linear-gradient(135deg,#1a75ff_0%,#1a2ce2_45%,#2a2fe8_100%)] px-6 pb-2 pt-20 text-white">
+    <section className="relative overflow-visible bg-[linear-gradient(135deg,#1a75ff_0%,#1a2ce2_45%,#2a2fe8_100%)] px-6 pb-2 pt-20 text-white max-[640px]:pb-20">
       <img
         src="/images%209/66030a8f80bb3baa5b0aaa1b_detail-mkt-right.svg"
         alt=""
