@@ -30,7 +30,8 @@
   }
 
   .footer-links .grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 32px !important;
   }
 
   .site-navbar nav {
