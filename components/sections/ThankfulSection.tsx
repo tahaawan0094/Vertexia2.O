@@ -83,7 +83,7 @@ export default function ThankfulSection() {
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(150%_120%_at_50%_60%,rgba(112,190,180,0.85)_0%,rgba(11,15,16,0.12)_50%,rgba(11,15,16,0.95)_82%)]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[linear-gradient(180deg,rgba(11,15,16,0.9)_0%,rgba(11,15,16,0.4)_55%,rgba(11,15,16,0)_100%)]" />
-      <div className="relative mx-auto grid min-h-[640px] max-w-[1500px] items-center gap-16 lg:grid-cols-[0.95fr_1.35fr] max-[640px]:flex max-[640px]:flex-col max-[640px]:text-center">
+      <div className="relative mx-auto grid min-h-[640px] max-w-[1500px] items-center gap-16 lg:grid-cols-[0.95fr_1.35fr] max-[640px]:flex max-[640px]:flex-col-reverse max-[640px]:text-center">
         <FadeIn>
         <div className="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center">
           <h2 className="text-[clamp(2.6rem,4.6vw,4.3rem)] font-medium leading-tight">
