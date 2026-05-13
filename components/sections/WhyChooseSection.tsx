@@ -97,8 +97,8 @@ export default function WhyChooseSection() {
         </p>
 
         <div className="mt-14 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_1.05fr] lg:gap-10">
-          <div className="max-[640px]:mt-10 max-[640px]:text-center">
-            <div className="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center">
+          <div className="max-[640px]:mt-10">
+            <div className="max-[640px]:flex max-[640px]:flex-col">
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2d6bff] text-[#2d6bff]">
                   <img
