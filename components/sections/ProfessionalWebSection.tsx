@@ -31,7 +31,7 @@ export default function ProfessionalWebSection() {
           </button>
         </div>
 
-        <div className="relative flex min-h-[460px] items-center justify-center lg:min-h-[620px]">
+        <div className="relative flex min-h-[460px] items-center justify-center lg:min-h-[620px] max-[640px]:hidden">
           <img
             src="/images%209/65df76fc25f041b3d2a2ec52_websites-ueni-p-1080.webp"
             alt="Website examples collage"
