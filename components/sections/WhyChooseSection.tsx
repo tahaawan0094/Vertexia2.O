@@ -121,7 +121,7 @@ export default function WhyChooseSection() {
               </p>
             </div>
 
-            <div className="mt-6 space-y-5 text-white/45">
+            <div className="mt-6 space-y-5 text-white/45 max-[640px]:hidden">
               {benefits.map((item) => {
                 const Icon = iconMap[item.icon];
                 return (
