@@ -116,65 +116,74 @@ export default function FaqSection() {
   return (
     <section className="bg-[#040404] px-6 pb-32 pt-24 text-white">
       <FadeIn>
-      <div className="mx-auto grid max-w-[1340px] gap-12 lg:grid-cols-[0.75fr_1.25fr]">
-        <div>
-          <h2 className="text-[clamp(2.6rem,4.6vw,4.2rem)] font-medium leading-tight">
-            Frequently
-            <span className="block">Asked</span>
-            <span className="block">Questions</span>
-          </h2>
-          <p className="mt-6 max-w-[420px] text-lg text-white/60">
-            Everything you need to know so you can use Vertexia like a pro
-          </p>
-          <p className="mt-8 text-lg text-white/70">Still have questions?</p>
-          <p className="mt-4 text-lg text-white/60">
-            Call us:{" "}
-            <span className="text-[#2d6bff]">(205) 551-9730</span>
-          </p>
-          <p className="mt-6 text-lg text-[#ff5a1f]">help@vertexia.com</p>
-        </div>
+        <div className="mx-auto grid max-w-[1340px] gap-12 lg:grid-cols-[0.75fr_1.25fr]">
+          <div className="max-[640px]:hidden">
+            <h2 className="text-[clamp(2.6rem,4.6vw,4.2rem)] font-medium leading-tight">
+              Frequently
+              <span className="block">Asked</span>
+              <span className="block">Questions</span>
+            </h2>
+            <p className="mt-6 max-w-[420px] text-lg text-white/60">
+              Everything you need to know so you can use Vertexia like a pro
+            </p>
+            <p className="mt-8 text-lg text-white/70">Still have questions?</p>
+            <p className="mt-4 text-lg text-white/60">
+              Call us:{" "}
+              <span className="text-[#2d6bff]">(205) 551-9730</span>
+            </p>
+            <p className="mt-6 text-lg text-[#ff5a1f]">admin.vertexia@gmail.com</p>
+          </div>
 
-        <div className="flex flex-col gap-7">
-          {faqs.map((item, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div
-                key={item.question}
-                className="rounded-[24px] border border-white/10 bg-[#151515] px-9 py-6 text-left text-white transition hover:border-white/20 hover:bg-[#1b1b1b]"
-              >
-                <button
-                  type="button"
-                  className="flex w-full items-center justify-between text-left text-[20px] font-medium"
-                  aria-expanded={isOpen}
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
+          <div className="flex flex-col gap-7">
+            {faqs.map((item, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <div
+                  key={item.question}
+                  className="rounded-[24px] border border-white/10 bg-[#151515] px-9 py-6 text-left text-white transition hover:border-white/20 hover:bg-[#1b1b1b]"
                 >
-                  <span>{item.question}</span>
-                  <span className="ml-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/15">
-                    <svg
-                      viewBox="0 0 24 24"
-                      className={`h-4.5 w-4.5 stroke-white transition ${
-                        isOpen ? "rotate-90" : "rotate-0"
-                      }`}
-                      fill="none"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M9 6l6 6-6 6" />
-                    </svg>
-                  </span>
-                </button>
-                {isOpen ? (
-                  <div className="mt-5 border-t border-white/10 pt-5 text-[16px] leading-7 text-white/70">
-                    {item.answer}
-                  </div>
-                ) : null}
-              </div>
-            );
-          })}
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between text-left text-[20px] font-medium"
+                    aria-expanded={isOpen}
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                  >
+                    <span>{item.question}</span>
+                    <span className="ml-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/15">
+                      <svg
+                        viewBox="0 0 24 24"
+                        className={`h-4.5 w-4.5 stroke-white transition ${isOpen ? "rotate-90" : "rotate-0"
+                          }`}
+                        fill="none"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                  </button>
+                  {isOpen ? (
+                    <div className="mt-5 border-t border-white/10 pt-5 text-[16px] leading-7 text-white/70">
+                      {item.answer}
+                    </div>
+                  ) : null}
+                </div>
+              );
+            })}
+
+            {/* Mobile-only contact info below FAQs */}
+            <div className="mt-8 hidden max-[640px]:block text-center">
+              <p className="text-lg text-white/70">Still have questions?</p>
+              <p className="mt-4 text-lg text-white/60">
+                Call us:{" "}
+                <span className="text-[#2d6bff]">(205) 551-9730</span>
+              </p>
+              <p className="mt-6 text-lg text-[#ff5a1f]">help@vertexia.com</p>
+            </div>
+          </div>
         </div>
-      </div>
       </FadeIn>
     </section>
   );
