@@ -162,7 +162,7 @@ export default function ComparisonSection() {
 
         <div className="mt-14 flex justify-center">
           <button
-            className="rounded-[12px] bg-[#ff5a1f] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)]"
+            className="rounded-[12px] bg-[#ff5a1f] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)] max-[640px]:px-12 max-[640px]:py-5 max-[640px]:text-lg max-[640px]:w-full max-[640px]:max-w-[320px]"
             type="button"
           >
             Get Started
