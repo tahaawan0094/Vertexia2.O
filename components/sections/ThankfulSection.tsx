@@ -11,21 +11,21 @@ const cards = [
     alt: "Bobs mobile website preview",
     sizeClass: "w-[min(420px,82vw)]",
     from: { x: -16, y: 8, rotate: -3, scale: 0.98 },
-    to: { x: -260, y: -22, rotate: -8, scale: 1.08 }
+    to: { x: -160, y: -22, rotate: -5, scale: 1.08 }
   },
   {
     src: "/images%203/65df79f94e854b95f0c1017d_Minerva%20-%20Mobile-p-500.webp",
     alt: "Minerva mobile website preview",
-    sizeClass: "w-[min(480px,86vw)]",
+    sizeClass: "w-[min(480px,86vw)] max-[640px]:w-[90vw]",
     from: { x: 0, y: 12, rotate: 0, scale: 1 },
-    to: { x: 0, y: -34, rotate: 0, scale: 1.08 }
+    to: { x: 0, y: -34, rotate: 0, scale: 1.05 }
   },
   {
     src: "/images%203/65df79fa4b6f581652e1995a_Mr%20Handyman%20-%20Mobile-p-500.webp",
     alt: "Mr Handyman mobile website preview",
-    sizeClass: "w-[min(420px,82vw)]",
+    sizeClass: "w-[min(420px,82vw)] max-[640px]:w-[85vw]",
     from: { x: 16, y: 8, rotate: 3, scale: 0.98 },
-    to: { x: 260, y: -18, rotate: 8, scale: 1.08 }
+    to: { x: 160, y: -18, rotate: 5, scale: 1.08 }
   }
 ];
 
@@ -79,13 +79,13 @@ export default function ThankfulSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#0b0f10] px-6 py-24 text-white max-[640px]:py-10"
+      className="relative overflow-hidden bg-[#0b0f10] px-6 py-24 text-white max-[640px]:py-16 max-[640px]:pb-32"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(150%_120%_at_50%_60%,rgba(112,190,180,0.85)_0%,rgba(11,15,16,0.12)_50%,rgba(11,15,16,0.95)_82%)]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[linear-gradient(180deg,rgba(11,15,16,0.9)_0%,rgba(11,15,16,0.4)_55%,rgba(11,15,16,0)_100%)]" />
-      <div className="relative mx-auto grid min-h-[640px] max-w-[1500px] items-center gap-16 lg:grid-cols-[0.95fr_1.35fr]">
+      <div className="relative mx-auto grid min-h-[640px] max-w-[1500px] items-center gap-16 lg:grid-cols-[0.95fr_1.35fr] max-[640px]:flex max-[640px]:flex-col max-[640px]:text-center">
         <FadeIn>
-        <div>
+        <div className="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center">
           <h2 className="text-[clamp(2.6rem,4.6vw,4.3rem)] font-medium leading-tight">
             Thankfully,
             <span className="block">there is Vertexia.</span>
@@ -94,15 +94,15 @@ export default function ThankfulSection() {
             The truly affordable done-for-you website solution.
           </p>
           <button
-            className="mt-10 rounded-[12px] bg-[#ff5a1f] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)]"
+            className="mt-10 rounded-[12px] bg-[#ff5a1f] px-12 py-5 text-lg font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)] max-[640px]:w-full max-[640px]:max-w-[320px]"
             type="button"
           >
             Get Started
           </button>
         </div>
         </FadeIn>
-        <div className="relative flex items-center justify-center">
-          <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center max-[640px]:mt-20 max-[640px]:h-[500px] max-[640px]:w-full">
+          <div className="relative flex items-center justify-center max-[640px]:h-full max-[640px]:w-full">
             <div className="absolute left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
               <motion.img
                 src={cards[0].src}
@@ -127,7 +127,7 @@ export default function ThankfulSection() {
                 style={rightMotion}
               />
             </div>
-            <div className="h-[520px] w-[540px] opacity-0" aria-hidden="true" />
+            <div className="h-[520px] w-[540px] opacity-0 max-[640px]:h-[500px] max-[640px]:w-full" aria-hidden="true" />
           </div>
         </div>
       </div>
