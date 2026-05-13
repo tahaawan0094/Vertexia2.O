@@ -18,19 +18,23 @@ export default function HowItWorksSection() {
 
           <div className="mt-16 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16">
             <div className="max-[640px]:mt-10 max-[640px]:text-center">
-              <div className="font-accent flex items-center justify-center gap-3 text-[40px] font-normal leading-[31px] text-white/70 max-[960px]:text-[26px] max-[960px]:leading-[28px] max-[640px]:flex-col max-[640px]:text-[16px] max-[640px]:leading-[22px]">
+              <div className="flex items-start gap-4 max-[640px]:flex-col max-[640px]:items-center max-[640px]:text-center">
                 <img
                   src="/images%205/65ba8d9f14728153fb66da4a_icon_shine.svg"
                   alt=""
                   aria-hidden="true"
-                  className="h-3 w-5"
+                  className="mt-2 h-6 w-6 max-[640px]:mt-0"
                 />
-                <span className="max-w-[280px]">
-                  Your website will be ready{" "}
-                  <span className="block text-[#2d6bff]">next Wednesday</span>
-                </span>
+                <div>
+                  <p className="text-[clamp(1.4rem,2.2vw,1.8rem)] font-normal leading-tight text-white/60">
+                    Your website will be ready
+                  </p>
+                  <p className="mt-1 text-[clamp(2.2rem,4vw,3.2rem)] font-medium leading-tight text-[#2d6bff]">
+                    next Wednesday
+                  </p>
+                </div>
               </div>
-              <h2 className="mt-6 text-[56px] font-medium leading-[73px] max-[960px]:text-[48px] max-[960px]:leading-[62px] max-[640px]:text-[36px] max-[640px]:leading-[46px]">
+              <h2 className="mt-8 text-[56px] font-medium leading-[73px] max-[960px]:text-[48px] max-[960px]:leading-[62px] max-[640px]:text-[36px] max-[640px]:leading-[46px]">
                 How does it work?
               </h2>
             </div>
