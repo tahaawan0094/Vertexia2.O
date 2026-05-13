@@ -13,7 +13,7 @@ export default function ProfessionalWebSection() {
 
       <FadeIn>
       <div className="relative mx-auto grid max-w-[1500px] items-center gap-12 lg:grid-cols-[1fr_1fr]">
-        <div>
+        <div className="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center max-[640px]:text-center">
           <h2 className="font-body text-[56px] font-medium leading-[73px] max-[960px]:text-[46px] max-[960px]:leading-[60px] max-[640px]:text-[34px] max-[640px]:leading-[44px]">
             Professional
             <span className="block">website done for</span>
@@ -24,7 +24,7 @@ export default function ProfessionalWebSection() {
             Completely zero-risk. Unmatched customer service.
           </p>
           <button
-            className="mt-10 rounded-[12px] bg-[#ff5a1f] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)]"
+            className="mt-10 rounded-[12px] bg-[#ff5a1f] px-10 py-4 text-base font-medium text-white shadow-[0_12px_26px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(255,90,31,0.45)] max-[640px]:w-full max-[640px]:max-w-[320px] max-[640px]:px-12 max-[640px]:py-5 max-[640px]:text-lg"
             type="button"
           >
             Get Started
