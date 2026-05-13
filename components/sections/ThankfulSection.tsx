@@ -79,7 +79,7 @@ export default function ThankfulSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#0b0f10] px-6 py-24 text-white max-[640px]:py-16 max-[640px]:pb-32"
+      className="relative overflow-hidden bg-[#0b0f10] px-6 py-24 text-white max-[640px]:py-16 max-[640px]:pb-10"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(150%_120%_at_50%_60%,rgba(112,190,180,0.85)_0%,rgba(11,15,16,0.12)_50%,rgba(11,15,16,0.95)_82%)]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[linear-gradient(180deg,rgba(11,15,16,0.9)_0%,rgba(11,15,16,0.4)_55%,rgba(11,15,16,0)_100%)]" />
