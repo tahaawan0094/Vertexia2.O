@@ -37,11 +37,14 @@ export default function HowItWorksSection() {
 
           <div className="relative">
             <div className="relative overflow-hidden rounded-[22px] bg-[#0b0b0b] shadow-[0_30px_60px_rgba(0,0,0,0.55)]">
-              <img
-                src="/images%205/662fbd88fb3018e820bf64b2_thumb-how-does-it-work-desk.webp"
-                alt="How it works preview"
-                className="h-full w-full object-cover"
-              />
+              <picture>
+                <source media="(max-width: 640px)" srcSet="/mobile%20images/how%20does%20it%20work" />
+                <img
+                  src="/images%205/662fbd88fb3018e820bf64b2_thumb-how-does-it-work-desk.webp"
+                  alt="How it works preview"
+                  className="h-full w-full object-cover"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/45" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="flex items-center gap-4 rounded-full bg-white/20 px-5 py-3 text-white backdrop-blur-sm">
