@@ -3,7 +3,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function AlternativesSection() {
   return (
-    <section id="services" className="bg-[#040404] px-6 pb-32 pt-28 text-white max-[640px]:hidden">
+    <section id="services" className="bg-[#040404] px-6 pb-32 pt-28 text-white">
       <FadeIn>
         <div className="mx-auto flex max-w-[1200px] flex-col gap-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr]">

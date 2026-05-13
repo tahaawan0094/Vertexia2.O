@@ -79,7 +79,7 @@ export default function ShowcaseSection() {
   }, []);
 
   return (
-    <section id="examples" className="relative overflow-visible pb-36 max-[640px]:pb-12">
+    <section id="examples" className="relative overflow-visible pb-24 max-[640px]:pb-0">
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_55%_at_50%_26%,rgba(38,67,255,0.22),rgba(4,6,20,0)_72%)]"
         aria-hidden="true"
